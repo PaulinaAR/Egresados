@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egresados</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="eventos-prox.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo-icono.png" alt="logo_inst">
+        </div>
+            <nav>
+                <ul class="navegacion">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Contacto</a></li> 
+                </ul>
+            </nav>
+            <a href="#"class ="btn-1"><button>Cerrar sesión</button></a>
+
+            <a onclick="OpenNav()" class ="menu" href="#"><button>Menu</button></a>
+            
+            <div class="overlay" id="mobile-menu">
+            <a onclick="CloseNav()" class="close" href="#">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Inicio</a>
+                <a href="#">Eventos</a>
+                <a href="#">Contacto</a> 
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container text-center">
+            <div class="row">
+              <div class="col fs-1">
+                Selecciona un evento
+              </div>
+
+            </div>
+          </div>
+    </main>
+
+    <section id="eventos-prox">
+        <h2 style="font-size: 30px">EVENTOS PRÓXIMOS</h2>
+        <p style="font-size: 20px;">No te pierdas de ninguno de éstos eventos que
+            te estaremos presentando a continuación:
+        </p>
+    </section>
+
+    <section id = "blog">
+        <div class="contenedor">
+            <article>
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseExample"> 
+                    <img src="images/eve-1.jpg" alt="">
+                </button>
+                <h4>Demuestra tu ingenio</h4>
+                <div class="collapse" id="collapse1">
+                    <div class="card card-body">
+                        Selecciona el numero de boletos
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">-</span>
+                            <span class="input-group-text">+</span>
+
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text position-relative">= $750</span>
+
+                          </div>    
+                          <button type="button" class="btn btn-secondary" disabled>proceder al pago</button>
+
+                        </div>
+                  </div>
+            </article>
+            <article>
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseExample"> 
+                <img src="images/eve-2.jpg" alt="">
+            </button>
+                <h4>Pon a prueba tus conocimientos</h4>
+                <div class="collapse" id="collapse2">
+                    <div class="card card-body">
+                        Selecciona el numero de boletos
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">-</span>
+                            <span class="input-group-text">+</span>
+
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text position-relative">= $300</span>
+                          </div> 
+                    </div>
+                  </div>
+            </article>
+
+
+            <article>
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseExample"> 
+                <img src="images/eve-3.jpg" alt="">
+            </button>
+                <h4>El entrenamiento hace al maestro</h4>
+                <div class="collapse" id="collapse3">
+                    <div class="card card-body">
+                        Selecciona el numero de boletos
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">-</span>
+                            <span class="input-group-text">+</span>
+
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text position-relative">= $500</span>
+                          </div> 
+                    </div>
+                  </div>
+            </article>
+
+
+        </div>
+    </section>
+
+    <footer class="pie-pag">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="images/logo-nacional.png" alt="itch">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Ave. Tecnológico #2909, Chihuahua, Chih. México, CP 31310</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social"> 
+                <a href="https://www.facebook.com/institutotecnologicodechihuahua" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/tecnologico_chihuahua/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/itch_vincula?lang=es" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/channel/UCsPNEs5nkh6tS_OdthGaRvQ" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>ITCH</b> - Todos los Derechos Reservados.</small>
+    </div>
+    </footer>
+
+    <script type = "text/javascript" src="nav-responsive.js"></script>
+</body>
+</html>
